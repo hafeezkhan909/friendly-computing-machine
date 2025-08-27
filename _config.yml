@@ -1,7 +1,7 @@
 title: "Mohammed Abdul Hafeez Khan"
 description: "PhD student • NASA RA • Research in generative AI, distribution shift, and medical AI"
-url: ""                 # set to https://<username>.github.io or custom domain later
-baseurl: ""             # leave empty for root
+url: "https://hafeezkhan909.github.io"
+baseurl: "/friendly-computing-machine"
 markdown: kramdown
 permalink: pretty
 
