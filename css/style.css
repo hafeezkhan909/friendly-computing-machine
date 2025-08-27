@@ -1,0 +1,40 @@
+:root {
+  --bg: #ffffff;
+  --fg: #0f172a;
+  --muted: #475569;
+  --accent: #111827;
+  --link: #2563eb;
+  --border: #e5e7eb;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; }
+.container { max-width: 940px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { border-bottom: 1px solid var(--border); }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; }
+.brand { font-weight: 700; color: var(--accent); }
+nav a { margin-left: 16px; color: var(--fg); }
+nav a.active { font-weight: 700; }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 20px 0; color: var(--muted); }
+
+/* About page */
+.hero { display: grid; grid-template-columns: 160px 1fr; grid-gap: 24px; align-items: start; margin: 24px 0 8px; }
+.hero img { width: 160px; height: 160px; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); }
+.hero h1 { margin: 0; }
+.subtitle { color: var(--muted); margin-top: 4px; }
+
+/* News */
+.news-list { list-style: none; padding-left: 0; }
+.news-list li { margin: 4px 0; }
+.news-date { display: inline-block; width: 130px; color: var(--muted); }
+
+/* Publications */
+#pub-filter { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; margin: 8px 0 16px; }
+.pub-item { display: grid; grid-template-columns: 120px 1fr; grid-gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.pub-media img { width: 120px; height: 84px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+.pub-title { font-weight: 600; }
+.pub-note { color: var(--muted); font-size: 0.95em; }
+h1, h2 { margin-top: 24px; }
