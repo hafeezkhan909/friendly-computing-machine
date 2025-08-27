@@ -1,0 +1,28 @@
+title: "Mohammed Abdul Hafeez Khan"
+description: "PhD student • NASA RA • Research in generative AI, distribution shift, and medical AI"
+url: ""                 # set to https://<username>.github.io or custom domain later
+baseurl: ""             # leave empty for root
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-scholar
+
+scholar:
+  style: ieee
+  locale: en
+  source: _bibliography
+  bibliography: papers.bib
+  sort_by: year,month
+  order: descending
+  # Use a minimal custom template (see _layouts/bib.html)
+  bibliography_template: bib
+
+# Navigation
+nav:
+  - name: "About"
+    link: "/"
+  - name: "Publications"
+    link: "/publications/"
+  - name: "CV"
+    link: "/cv/"
