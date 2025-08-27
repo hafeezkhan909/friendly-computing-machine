@@ -1,0 +1,6 @@
+- date: "Aug 26, 2025"
+  text: "Working on test-time prompt refinement for T2I with MLLMs; steady gains on GENEVAL and LLM-grounded diffusion benchmarks."
+- date: "Jul 2025"
+  text: "AHA-funded LVADNet3D shows improved fidelity over UNet3D for intraventricular flow reconstruction."
+- date: "Jun 2025"
+  text: "Submitted MTIR (Few-Shot Segmentation) to NeurIPS."
