@@ -1,0 +1,8 @@
+{% if site.data.news and site.data.news.size > 0 %}
+<h2>News</h2>
+<ul class="news-list">
+  {% for item in site.data.news %}
+    <li><span class="news-date">{{ item.date }}</span> {{ item.text }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
