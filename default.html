@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        {% for item in site.nav %}
+          <a href="{{ item.link | relative_url }}" class="{% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</span>
+    </div>
+  </footer>
+
+  <script>
+  // Simple filter for publications page
+  function filterPubs() {
+    const q = document.getElementById('pub-filter').value.toLowerCase();
+    document.querySelectorAll('.pub-item').forEach(el => {
+      el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  }
+  </script>
+</body>
+</html>

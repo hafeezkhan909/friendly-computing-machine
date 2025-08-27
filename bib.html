@@ -1,0 +1,10 @@
+{% assign img = entry.image %}
+<div class="pub-item">
+  {% if img %}
+  <div class="pub-media"><img src="{{ img | relative_url }}" alt=""></div>
+  {% endif %}
+  <div class="pub-meta">
+    <div class="pub-title">{{ reference }}</div>
+    {% if entry.note %}<div class="pub-note">{{ entry.note }}</div>{% endif %}
+  </div>
+</div>
