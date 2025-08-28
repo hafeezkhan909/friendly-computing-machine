@@ -48,7 +48,7 @@ title: About
   <a href="mailto:mkhan@my.fit.edu" target="_blank">
     <img src="{{ '/assets/icons/gmail.png' | relative_url }}" alt="Gmail">
   </a>
-  <a href="[https://scholar.google.com/citations?user=XXXX](https://scholar.google.com/citations?user=zSD4PWoAAAAJ&hl=en)" target="_blank">
+  <a href="https://scholar.google.com/citations?user=zSD4PWoAAAAJ&hl=en&oi=ao" target="_blank">
     <img src="{{ '/assets/icons/scholar.png' | relative_url }}" alt="Google Scholar">
   </a>
   <a href="https://github.com/hafeezkhan909" target="_blank">
