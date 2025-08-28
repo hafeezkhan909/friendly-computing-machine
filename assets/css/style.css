@@ -56,3 +56,21 @@ nav a.active { font-weight: 700; }
 
 .pub-title { font-weight: 600; }
 .pub-note { color: var(--muted); font-size: 0.95em; }
+
+/* PDF button */
+.pdf-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.pdf-btn:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.08);
+}
