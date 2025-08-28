@@ -57,6 +57,14 @@ nav a.active { font-weight: 700; }
 .pub-title { font-weight: 600; }
 .pub-note { color: var(--muted); font-size: 0.95em; }
 
+.pub-media img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.pub-media img:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
+
 /* PDF button */
 .pdf-btn {
   display: inline-block;
