@@ -32,11 +32,12 @@ title: About
     <p>
       <strong>Also, I’m actively seeking a research internship for Summer 2026—ideally one where the loss goes down, and my learning goes up!!</strong>
     </p>
-    <h2>Selected Publications</h2>
-    <div class="pub-list">
-      {% bibliography --file papers --query @*[selected=true] %}
-    </div>
   </div>
 </div>
 
 {% include news.html %}
+
+<h2>Selected Publications</h2>
+<div class="pub-list">
+  {% bibliography --file papers --query @*[selected=true] %}
+</div>
