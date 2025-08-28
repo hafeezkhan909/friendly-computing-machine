@@ -46,11 +46,12 @@ nav a.active { font-weight: 700; }
 .pub-media { width: 160px; } /* keep the column fixed */
 .pub-media img {
   display: block;
-  width: 100%;       /* fill the 160px column */
-  height: 110px;     /* uniform thumbnail height */
-  object-fit: cover; /* crop to fit nicely */
+  width: 100%;       /* fill the 160px column width */
+  height: auto;      /* adjust height automatically */
+  object-fit: contain; /* show the whole image, no cropping */
   border-radius: 8px;
   border: 1px solid var(--border);
+  background: #f8f9fa; /* optional: add a light background to fill empty space */
 }
 
 .pub-title { font-weight: 600; }
