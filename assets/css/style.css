@@ -52,7 +52,7 @@ nav a.active { font-weight: 700; }
 
 .news-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;  
   margin: 6px 0;
 }
 
