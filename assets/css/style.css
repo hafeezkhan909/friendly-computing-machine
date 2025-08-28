@@ -38,7 +38,23 @@ a:hover { text-decoration: underline; }
 nav a { margin-left: 16px; color: var(--fg); }
 nav a.active { font-weight: 700; }
 
-.site-footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 20px 0; color: var(--muted); }
+.site-footer {
+  background-color: #0a2540;   /* navy blue */
+  color: #ffffff;             /* white text */
+  padding: 14px 0;
+  margin-top: auto;           /* push to bottom */
+  text-align: center;         /* center the text */
+  white-space: nowrap;        /* prevent wrapping */
+}
+
+.site-footer a {
+  color: #a3d3ff;             /* light blue links */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
 
 /* About page */
 .hero { 
