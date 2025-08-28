@@ -41,3 +41,20 @@ title: About
 <div class="pub-list">
   {% bibliography --file papers --query @*[selected=true] %}
 </div>
+
+
+<h2>Contact</h2>
+<div class="contact-icons">
+  <a href="mailto:mkhan@my.fit.edu" target="_blank">
+    <img src="{{ '/assets/icons/gmail.png' | relative_url }}" alt="Gmail">
+  </a>
+  <a href="[https://scholar.google.com/citations?user=XXXX](https://scholar.google.com/citations?user=zSD4PWoAAAAJ&hl=en)" target="_blank">
+    <img src="{{ '/assets/icons/scholar.png' | relative_url }}" alt="Google Scholar">
+  </a>
+  <a href="https://github.com/hafeezkhan909" target="_blank">
+    <img src="{{ '/assets/icons/github.png' | relative_url }}" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/mahafeezkhan/" target="_blank">
+    <img src="{{ '/assets/icons/linkedin.png' | relative_url }}" alt="LinkedIn">
+  </a>
+</div>
