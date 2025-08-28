@@ -8,7 +8,7 @@
     <!-- Paper title -->
     <div class="pub-title">{{ entry.title }}</div>
 
-    <!-- Authors (convert to First Last + underline your name) -->
+    <!-- Authors -->
     <div class="pub-authors">
       {% assign authors = entry.author_array %}
       {% for author in authors %}
@@ -24,11 +24,20 @@
 
     <!-- Venue -->
     <div class="pub-venue">
-      In {% if entry.booktitle %}{{ entry.booktitle }}{% endif %}{% if entry.journal %}{{ entry.journal }}{% endif %}, {{ entry.year }}
+      {% if entry.booktitle %}<em>In {{ entry.booktitle }}</em>{% endif %}
+      {% if entry.journal %}<em>{{ entry.journal }}</em>{% endif %}, {{ entry.year }}
     </div>
 
+    <!-- Note -->
     {% if entry.note %}
       <div class="pub-note">{{ entry.note }}</div>
+    {% endif %}
+
+    <!-- PDF Button -->
+    {% if entry.url %}
+      <div class="pub-links">
+        <a class="btn" href="{{ entry.url }}" target="_blank">[PDF]</a>
+      </div>
     {% endif %}
   </div>
 </div>
