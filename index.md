@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="hero">
-  <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Headshot">
+  <img src="{{ '/assets/images/headshot.png' | relative_url }}" alt="Headshot">
   <div>
     <h1>Mohammed Abdul Hafeez Khan</h1>
     <div class="subtitle">PhD Student, Florida Tech · NASA Research Assistant</div>
