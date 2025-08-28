@@ -3,7 +3,7 @@
 <ul class="news-list">
   {% for item in site.data.news %}
     <li>
-      <strong>{{ item.date }}</strong> — {{ item.text | markdownify }}
+      <strong>{{ item.date }}</strong>&nbsp;{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' }}
     </li>
   {% endfor %}
 </ul>
