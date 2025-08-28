@@ -39,6 +39,10 @@ nav a.active { font-weight: 700; }
 .hero h1 { margin: 0; }
 .subtitle { color: var(--muted); margin-top: 4px; }
 
+.hero p {
+  font-size: 0.95rem;   /* slightly smaller than normal (16px → ~15px) */
+}
+
 /* News */
 .news-list { list-style: none; padding-left: 0; }
 .news-list li { margin: 4px 0; }
