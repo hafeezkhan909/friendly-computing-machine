@@ -8,14 +8,23 @@
     <!-- Paper title -->
     <div class="pub-title">{{ entry.title }}</div>
 
-    <!-- Authors (with your name underlined) -->
+    <!-- Authors (convert to First Last + underline your name) -->
     <div class="pub-authors">
-      {{ entry.author | replace: "Khan, Mohammed Abdul Hafeez", "<u>Khan, Mohammed Abdul Hafeez</u>" }}
+      {% assign authors = entry.author_array %}
+      {% for author in authors %}
+        {% assign formatted = author.first | append: " " | append: author.last %}
+        {% if formatted contains "Mohammed Abdul Hafeez Khan" %}
+          <u>{{ formatted }}</u>
+        {% else %}
+          {{ formatted }}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
     </div>
 
     <!-- Venue -->
     <div class="pub-venue">
-      In {{ entry.booktitle }}{% if entry.journal %}{{ entry.journal }}{% endif %}, {{ entry.year }}
+      In {% if entry.booktitle %}{{ entry.booktitle }}{% endif %}{% if entry.journal %}{{ entry.journal }}{% endif %}, {{ entry.year }}
     </div>
 
     {% if entry.note %}
