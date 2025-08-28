@@ -4,7 +4,22 @@
   <div class="pub-media"><img src="{{ img | relative_url }}" alt=""></div>
   {% endif %}
   <div class="pub-meta">
-    <div class="pub-title">{{ reference }}</div>
-    {% if entry.note %}<div class="pub-note">{{ entry.note }}</div>{% endif %}
+
+    <!-- Paper title -->
+    <div class="pub-title">{{ entry.title }}</div>
+
+    <!-- Authors (with your name underlined) -->
+    <div class="pub-authors">
+      {{ entry.author | replace: "Khan, Mohammed Abdul Hafeez", "<u>Khan, Mohammed Abdul Hafeez</u>" }}
+    </div>
+
+    <!-- Venue -->
+    <div class="pub-venue">
+      In {{ entry.booktitle }}{% if entry.journal %}{{ entry.journal }}{% endif %}, {{ entry.year }}
+    </div>
+
+    {% if entry.note %}
+      <div class="pub-note">{{ entry.note }}</div>
+    {% endif %}
   </div>
 </div>
