@@ -55,8 +55,8 @@ h1, h2 { margin-top: 24px; }
 }
 
 .pub-media img {
-  width: 180px;
-  height: 120px;
-  object-fit: cover; /* crops inside the box */
+  width: 180px;   /* or whatever thumbnail width you want */
+  height: auto;   /* keeps aspect ratio */
+  object-fit: cover;
   border-radius: 4px;
 }
