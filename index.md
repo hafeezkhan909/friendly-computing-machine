@@ -6,11 +6,11 @@ title: About
 <div class="hero">
   <img src="{{ '/assets/images/headshot.png' | relative_url }}" alt="Headshot">
   <div>
-    <h1>Mohammed Abdul Hafeez Khan</h1>
+    <h1>Mohammed Abdul <strong>Hafeez</strong> Khan</h1>
     <div class="subtitle">PhD Student, Florida Tech · NASA Research Assistant</div>
 
     <p>
-      Welcome! I am a PhD student specializing how models adapt under distribution shift, 
+      Welcome! I am a PhD student specializing in how models adapt under distribution shift, 
       addressing challenges including catastrophic forgetting, continual learning, and few-shot generalization. 
       My advisor is <a href="https://www.fit.edu/faculty-profiles/b/bhattacharyya-siddhartha/" target="_blank">Siddhartha Bhattacharyya</a>, 
       and I am funded by NASA, where I am working on lane detection for autonomous driving and taxiing on airports. 
