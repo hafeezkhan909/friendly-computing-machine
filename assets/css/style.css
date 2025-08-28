@@ -53,3 +53,10 @@ h1, h2 { margin-top: 24px; }
 .pub-links .btn:hover {
   background-color: #003d80;
 }
+
+.pub-media img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover; /* crops inside the box */
+  border-radius: 4px;
+}
