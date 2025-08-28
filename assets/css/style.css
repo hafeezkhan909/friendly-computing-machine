@@ -23,7 +23,7 @@ nav a.active { font-weight: 700; }
 /* About page */
 .hero { 
   display: grid; 
-  grid-template-columns: 220px 1fr; /* enlarge the left column */
+  grid-template-columns: 1fr 220px; /* enlarge the left column */
   gap: 32px;                        /* more breathing space */
   align-items: center;              /* vertically center image with text */
   margin: 32px 0; 
@@ -31,6 +31,7 @@ nav a.active { font-weight: 700; }
 .hero img { 
   width: 220px; 
   height: 220px; 
+  order: 2;
   object-fit: cover; 
   border-radius: 12px; 
   border: 1px solid var(--border); 
