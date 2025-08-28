@@ -40,7 +40,7 @@ nav a.active { font-weight: 700; }
 .subtitle { color: var(--muted); margin-top: 4px; }
 
 .hero p {
-  font-size: 0.95rem;   /* slightly smaller than normal (16px → ~15px) */
+  font-size: 0.9rem;   
 }
 
 /* News */
