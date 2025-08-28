@@ -28,18 +28,23 @@
     </div>
   </footer>
 
+  <!-- Publication filter -->
   <script>
-  // Simple filter for publications page
-  function filterPubs() {
-    const q = document.getElementById('pub-filter').value.toLowerCase();
-    document.querySelectorAll('.pub-item').forEach(el => {
-      el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
-    });
-  }
+    function filterPubs() {
+      const q = document.getElementById('pub-filter').value.toLowerCase();
+      document.querySelectorAll('.pub-item').forEach(el => {
+        el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
   </script>
+
+  <!-- Lightbox -->
   <div id="lightbox" class="lightbox">
-   <span class="close">&times;</span>
-   <img class="lightbox-content" id="lightbox-img">
- </div>
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Your main JS (lightbox logic, etc.) -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
