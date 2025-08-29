@@ -70,7 +70,7 @@ nav a.active { font-weight: 700; }
   display: grid; 
   grid-template-columns: 1fr 220px; /* enlarge the left column */
   gap: 32px;                        /* more breathing space */
-  align-items: center;              /* vertically center image with text */
+  align-items: start;              /* vertically center image with text */
   margin: 32px 0; 
 }
 
