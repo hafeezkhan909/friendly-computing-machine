@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+<!--       <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a> -->
       <nav>
         {% for item in site.nav %}
           <a href="{{ item.link | relative_url }}" class="{% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
