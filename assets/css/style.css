@@ -33,7 +33,7 @@ a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .site-header { border-bottom: 1px solid var(--border); }
-.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; }
+.site-header .container { display: flex; align-items: center; justify-content: flex-end; padding: 14px 16px; }
 .brand { font-weight: 700; color: var(--accent); }
 nav a { margin-left: 16px; color: var(--fg); }
 nav a.active { font-weight: 700; }
