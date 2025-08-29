@@ -26,7 +26,7 @@ title: About
     </p>
 
     <p>
-      <em>I’m open to collaborations—feel free to reach out if our interests align.</em>
+      <em>I’m open to collaborations—feel free to reach out by email if our interests align.</em>
     </p>
 
     <p>
