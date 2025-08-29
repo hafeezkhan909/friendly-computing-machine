@@ -57,6 +57,15 @@ nav a.active { font-weight: 700; }
 }
 
 /* About page */
+
+.hero h1 {
+  font-weight: 400; /* normal weight for the whole name */
+}
+
+.hero h1 strong {
+  font-weight: 700; /* make only Hafeez bold */
+}
+
 .hero { 
   display: grid; 
   grid-template-columns: 1fr 220px; /* enlarge the left column */
