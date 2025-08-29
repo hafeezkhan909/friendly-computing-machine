@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV</title>
+  <link rel="stylesheet" href="/friendly-computing-machine/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/friendly-computing-machine/">Mohammed Abdul Hafeez Khan</a>
+      <nav>
+        
+          <a href="/friendly-computing-machine/" class="">About</a>
+        
+          <a href="/friendly-computing-machine/publications/" class="">Publications</a>
+        
+          <a href="/friendly-computing-machine/assets/pdf/CV.pdf" class="">CV</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="cv">CV</h1>
+
+<ul>
+  <li>Download my latest CV: <a href="/assets/Mohammed_Abdul_Hafeez_Khan_CV.pdf">PDF</a></li>
+</ul>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="container">
+    &copy; Copyright 2025 Mohammed Abdul Hafeez Khan · 
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with 
+    <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme · 
+    Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> · 
+    Last updated: August 29, 2025.
+  </div>
+</footer>
+
+
+  <!-- Publication filter -->
+  <script>
+    function filterPubs() {
+      const q = document.getElementById('pub-filter').value.toLowerCase();
+      document.querySelectorAll('.pub-item').forEach(el => {
+        el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+  </script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Your main JS (lightbox logic, etc.) -->
+  <script src="/friendly-computing-machine/assets/js/main.js"></script>
+</body>
+</html>
