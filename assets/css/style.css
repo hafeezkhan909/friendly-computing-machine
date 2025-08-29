@@ -74,6 +74,10 @@ nav a.active { font-weight: 700; }
   margin: 32px 0; 
 }
 
+.hero img {
+  margin-top: 28px; /* manual adjustment so it lines up with paragraph text */
+}
+
 /* Mobile layout */
 @media (max-width: 768px) {
   .hero {
