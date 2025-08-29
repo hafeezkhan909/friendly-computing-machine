@@ -43,7 +43,6 @@ title: About
 </div>
 
 
-<h2>Contact</h2>
 <div class="contact-icons">
   <a href="mailto:mkhan@my.fit.edu" target="_blank">
     <img src="{{ '/assets/icons/gmail.png' | relative_url }}" alt="Gmail">
