@@ -72,20 +72,19 @@ nav a.active { font-weight: 700; }
   gap: 32px;                        /* more breathing space */
   align-items: start;              /* vertically center image with text */
   margin: 32px 0; 
+  grid-template-areas:
+    "header image"
+    "body image";
 }
 
 .hero-header {
-  grid-column: 1;
+  grid-area: header;
 }
 
 .hero-body {
-  grid-column: 1;
+  grid-area: body;
 }
 
-/* .hero img {
-  margin-top: 48px; /* manual adjustment so it lines up with paragraph text */
-}
- */
 /* Mobile layout */
 @media (max-width: 768px) {
   .hero {
@@ -132,7 +131,7 @@ nav a.active { font-weight: 700; }
 .hero img { 
   width: 240px; 
   height: 280px; 
-  order: 2;
+/*   order: 2; */
   object-fit: cover; 
   border-radius: 12px; 
   border: 1px solid var(--border); 
