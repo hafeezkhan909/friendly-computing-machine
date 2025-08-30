@@ -327,13 +327,14 @@ ol.bibliography {
 
 @media (max-width: 768px) {
   .site-header .container {
-    justify-content: space-between;  /* Push nav all the way right */
+    max-width: 100%;
+    padding: 0 12px;
+    justify-content: space-between;
   }
 
   nav {
-    margin-left: auto;  /* Push nav links to extreme right */
+    margin-left: auto;
   }
-
   nav a {
     font-size: 0.9rem;
   }
