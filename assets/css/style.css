@@ -82,10 +82,10 @@ nav a.active { font-weight: 700; }
   grid-column: 1;
 }
 
-.hero img {
+/* .hero img {
   margin-top: 48px; /* manual adjustment so it lines up with paragraph text */
 }
-
+ */
 /* Mobile layout */
 @media (max-width: 768px) {
   .hero {
@@ -136,6 +136,7 @@ nav a.active { font-weight: 700; }
   object-fit: cover; 
   border-radius: 12px; 
   border: 1px solid var(--border); 
+  margin-top: 0;
 }
 .hero h1 { margin: 0; }
 .subtitle { color: var(--muted); margin-top: 4px; }
