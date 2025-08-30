@@ -74,6 +74,14 @@ nav a.active { font-weight: 700; }
   margin: 32px 0; 
 }
 
+.hero-header {
+  grid-column: 1;
+}
+
+.hero-body {
+  grid-column: 1;
+}
+
 .hero img {
   margin-top: 96px; /* manual adjustment so it lines up with paragraph text */
 }
