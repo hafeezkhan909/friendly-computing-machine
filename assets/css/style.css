@@ -21,7 +21,11 @@ html, body {
   color: var(--fg);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+body { overflow-wrap: anywhere; }
 
 .container {
   max-width: 940px;
