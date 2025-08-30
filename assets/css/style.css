@@ -83,7 +83,7 @@ nav a.active { font-weight: 700; }
 }
 
 .hero img {
-  margin-top: 96px; /* manual adjustment so it lines up with paragraph text */
+  margin-top: 48px; /* manual adjustment so it lines up with paragraph text */
 }
 
 /* Mobile layout */
