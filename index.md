@@ -22,11 +22,11 @@ title: About
       <a href="https://www.bits-pilani.ac.in/dubai/raja-muthalagu/" target="_blank">Raja Muthalaghu</a> and received the 
       Outstanding Undergraduate Thesis Award. 
       Alongside my PhD, I have worked closely with mentors from Microsoft Research, NASA Langley, UTHealth Houston, Collins Aerospace. 
-      Through these collaborations, I have gained extensive experience in self-supervised models, diffusion models, and multimodal large-language models.
+      Through these collaborations, I have gained extensive experience especially in self-supervised models, diffusion models, and multimodal large-language models.
     </p>
 
     <p>
-      <em>I’m open to collaborations—feel free to reach out if our interests align.</em>
+      <em>I’m open to collaborations—feel free to reach out by email if our interests align.</em>
     </p>
 
     <p>
@@ -36,3 +36,24 @@ title: About
 </div>
 
 {% include news.html %}
+
+<h2>Selected Publications</h2>
+<div class="pub-list">
+  {% bibliography --file papers --query @*[selected=true] %}
+</div>
+
+
+<div class="contact-icons">
+  <a href="mailto:mkhan@my.fit.edu" target="_blank">
+    <img src="{{ '/assets/icons/gmail.png' | relative_url }}" alt="Gmail">
+  </a>
+  <a href="https://scholar.google.com/citations?user=zSD4PWoAAAAJ&hl=en&oi=ao" target="_blank">
+    <img src="{{ '/assets/icons/scholar.png' | relative_url }}" alt="Google Scholar">
+  </a>
+  <a href="https://github.com/hafeezkhan909" target="_blank">
+    <img src="{{ '/assets/icons/github.png' | relative_url }}" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/mahafeezkhan/" target="_blank">
+    <img src="{{ '/assets/icons/linkedin.png' | relative_url }}" alt="LinkedIn">
+  </a>
+</div>
