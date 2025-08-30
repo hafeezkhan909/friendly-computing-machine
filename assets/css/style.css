@@ -339,9 +339,3 @@ ol.bibliography {
     font-size: 0.9rem;
   }
 }
-
-@media (max-width: 768px) {
-  .site-footer {
-    display: none;
-  }
-}
