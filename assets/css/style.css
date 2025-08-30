@@ -74,6 +74,12 @@ nav a.active { font-weight: 700; }
   margin: 32px 0;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .hero-header {
   grid-area: header;
 }
