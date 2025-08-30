@@ -23,8 +23,6 @@ html, body {
   line-height: 1.6;
 }
 
-body { overflow-wrap: anywhere; }
-
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -147,8 +145,8 @@ nav a.active {
   .hero img {
     order: 2;
     margin: 16px auto;
-    width: 280px;
-    height: 320px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid var(--border);
@@ -325,19 +323,4 @@ ol.bibliography {
 
 .contact-icons a img:hover {
   transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .site-header .container {
-    max-width: 100%;
-    padding: 0 12px;
-    justify-content: space-between;
-  }
-
-  nav {
-    margin-left: auto;
-  }
-  nav a {
-    font-size: 0.9rem;
-  }
 }
