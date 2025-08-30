@@ -326,6 +326,20 @@ ol.bibliography {
 }
 
 @media (max-width: 768px) {
+  .site-header .container {
+    justify-content: space-between;  /* Push nav all the way right */
+  }
+
+  nav {
+    margin-left: auto;  /* Push nav links to extreme right */
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
   .site-footer {
     display: none;
   }
