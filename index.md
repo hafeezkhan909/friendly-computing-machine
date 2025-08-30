@@ -4,7 +4,6 @@ title: About
 ---
 
 <div class="hero">
-  <img src="{{ '/assets/images/headshot.png' | relative_url }}" alt="Headshot">
   <div>
     <h1>Mohammed Abdul <strong>Hafeez</strong> Khan</h1>
     <div class="subtitle">PhD Student, Florida Tech · NASA Research Assistant</div>
@@ -33,6 +32,7 @@ title: About
       <strong>Also, I’m actively seeking a research internship for Summer 2026—ideally one where the loss goes down, and my learning goes up!!</strong>
     </p>
   </div>
+  <img src="{{ '/assets/images/headshot.png' | relative_url }}" alt="Headshot">
 </div>
 
 {% include news.html %}
