@@ -162,11 +162,14 @@ nav a.active {
 /* Publications: stack image above text on mobile */
 @media (max-width: 768px) {
   .pub-item {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;  /* Stack vertically */
+    gap: 12px;                   /* Add spacing between image and text */
+    text-align: left;
   }
 
   .pub-media {
-    width: 100%;
+    width: 100%;                 /* Make image section full width */
   }
 
   .pub-media img {
