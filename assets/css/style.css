@@ -145,8 +145,8 @@ nav a.active {
   .hero img {
     order: 2;
     margin: 16px auto;
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 280px;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid var(--border);
