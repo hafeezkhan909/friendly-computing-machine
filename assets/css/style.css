@@ -83,23 +83,41 @@ nav a.active { font-weight: 700; }
   .hero {
     display: flex;
     flex-direction: column;
-    text-align: center; /* center-align text on mobile */
-  }
-
-  .hero img {
-    order: 2;            /* put image after name/role */
-    margin: 16px auto;   /* center the image */
-    width: 180px;        /* slightly bigger image on mobile */
-    height: 180px;
+    text-align: center; /* center-align name + subtitle */
   }
 
   .hero h1,
   .hero .subtitle {
-    order: 1;
+    order: 1;           /* first: name + subtitle */
+  }
+
+  .hero img {
+    order: 2;           /* second: image */
+    margin: 16px auto;  /* center image horizontally */
+    width: 200px;       /* slightly bigger for visibility */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--border);
   }
 
   .hero p {
-    text-align: left;    /* paragraphs back to left for readability */
+    order: 3;           /* third: body text */
+    text-align: left;   /* left-align text for readability */
+  }
+}
+
+/* Publications: stack image above text on mobile */
+@media (max-width: 768px) {
+  .pub-item {
+    grid-template-columns: 1fr;   /* one column */
+  }
+  .pub-media { width: 100%; }
+  .pub-media img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 8px;
   }
 }
 
