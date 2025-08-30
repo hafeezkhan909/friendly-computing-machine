@@ -21,10 +21,7 @@ html, body {
   color: var(--fg);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.6;
-  overflow-x: hidden;
-  max-width: 100vw;
 }
-
 
 .container {
   max-width: 940px;
@@ -326,6 +323,12 @@ ol.bibliography {
 
 .contact-icons a img:hover {
   transform: scale(1.15);
+}
+
+/* Prevent any horizontal scroll on body */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Ensure footer always spans full width */
