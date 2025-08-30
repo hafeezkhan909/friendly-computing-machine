@@ -73,7 +73,7 @@ nav a.active {
   padding: 14px 0;
   margin-top: auto;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .site-footer a {
