@@ -324,3 +324,9 @@ ol.bibliography {
 .contact-icons a img:hover {
   transform: scale(1.15);
 }
+
+@media (max-width: 768px) {
+  .site-footer {
+    display: none;
+  }
+}
