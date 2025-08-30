@@ -4,8 +4,10 @@ title: About
 ---
 
 <div class="hero">
-  <h1>Mohammed Abdul <strong>Hafeez</strong> Khan</h1>
-  <div class="subtitle">PhD Student, Florida Tech · NASA Research Assistant</div>
+  <div class="hero-header">
+    <h1>Mohammed Abdul <strong>Hafeez</strong> Khan</h1>
+    <div class="subtitle">PhD Student, Florida Tech · NASA Research Assistant</div>
+  </div>
 
   <img src="{{ '/assets/images/headshot.png' | relative_url }}" alt="Headshot">
 
@@ -42,7 +44,6 @@ title: About
 <div class="pub-list">
   {% bibliography --file papers --query @*[selected=true] %}
 </div>
-
 
 <div class="contact-icons">
   <a href="mailto:mkhan@my.fit.edu" target="_blank">
